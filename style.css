@@ -6,6 +6,7 @@
 body {
     width: 100vw;
     background-color: #f2f2f2;
+    overflow-x: hidden;
 }
 
 i {
@@ -56,11 +57,13 @@ i {
     width: 100%;
     height: 100%;
     padding: 7% 12% 2.5% 12%;
+    overflow-x: hidden;
+    /* position: relative; */
 }
 
 /* Feeds  */
 .feeds {
-    width: 60%;
+    width: 58%;
     height: 1000vh;
 }
 
@@ -139,6 +142,15 @@ i {
     display: flex;
     justify-content: space-between;
 }
+.post_texts {
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .comment {
     width: 100%;
     height: 40px;
@@ -164,9 +176,30 @@ i {
     font-size: 1.5rem;
 }
 .suggestions {
-    background-color: red;
-    width: 27%;
+    width: 30%;
     height: 50vh;
     position: fixed;
     right: 12%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.dummy_container {
+    display: flex;
+    align-items: center;
+}
+.dummy_container > i {
+    font-size: 3.5rem;
+}
+.profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile_id {
+    height: 40px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
