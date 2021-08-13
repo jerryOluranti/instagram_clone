@@ -7,6 +7,7 @@ body {
     width: 100vw;
     background-color: #f2f2f2;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 i {
@@ -56,7 +57,7 @@ i {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding: 7% 12% 2.5% 12%;
+    padding: 15vh 12% 2.5% 12%;
     overflow-x: hidden;
     /* position: relative; */
 }
@@ -225,4 +226,45 @@ i {
     width: 70px;
     height: 70px;
     font-size: 1.5rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px){
+    .suggestions {
+        display: none;
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    .feeds {
+        width: 100%;
+        overflow: hidden;
+    }
+    .page_body {
+        padding: 15vh 7% 2.5% 7%;
+    }
+    .navbar {
+        padding: 0 4%;
+    }
+}
+
+@media screen and (max-width: 545px){
+    .search_box {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+        font-size: 1.1rem;
+    }
+    .nav_links>i {
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    .nav_links {
+        width: 120px;
+    }
 }
