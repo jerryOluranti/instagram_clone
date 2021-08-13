@@ -60,7 +60,14 @@
     </div>
     <button class="floating_create_post"><i class="fas fa-plus"></i></button>
     <div class="add_post_container">
-        
+        <form action="" class="add_form">
+            <input type="text" id="post_username" placeholder="Username">
+            <label for="post_media">Select Media</label>
+            <input type="file" id="post_media" hidden>
+            <textarea id="post_message" placeholder="Message" width="100%"></textarea>
+            <button id="post_post">Post</button>
+            <button id="post_back">Back</button>
+        </form>
     </div>
 </body>
 <script src="./posts.js"></script>

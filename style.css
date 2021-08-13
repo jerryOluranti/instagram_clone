@@ -94,7 +94,7 @@ i {
 
 /* Posts */
 .post {
-    margin-top: 5%;
+    margin-top: 8%;
     border: 1px solid rgba(151, 151, 151, 0.6);
     border-radius: 5px;
 }
@@ -139,7 +139,7 @@ i {
     font-size: 1.5rem;
 }
 .lcs {
-    width: 16%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
 }
