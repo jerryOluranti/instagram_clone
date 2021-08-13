@@ -67,3 +67,39 @@ window.onload = () => {
         `
     })
 }
+
+const showPost = (elem, flag) => {
+    flag == 1 ? elem.setAttribute("style", "visibility: hidden; display:none;") : elem.setAttribute("style", "visibility: visible; display:grid;");
+}
+
+document.querySelector("#post_back").onclick = () => showPost(document.querySelector('.add_post_container'), 1)
+
+document.querySelector(".floating_create_post").onclick = () => showPost(document.querySelector('.add_post_container'), 0)
+
+document.querySelector("#post_post").onclick = () => addPost()
+
+let post_media = document.querySelector('#post_media');
+post_media.onchange = () => {
+    
+    if(["png", "jpg", "jpeg"].indexOf(post_media.files[0].name.toLowerCase().split(".")[1]) < 0){
+        alert(`Only Images Can be Posted For Now`);
+        return
+    }
+    console.log(window.URL.createObjectURL(post_media.files[0]));
+    console.log(post_media.files[0].path);
+
+    document.querySelector(".post_media_label").textContent = post_media.files[0].name.substring(0,20) + "...";
+}
+
+const addPost = () => {
+    let username = document.querySelector('#post_username').value,
+        post_message = document.querySelector('#post_message').value;
+
+    if (!(username && post_media.files)){
+        alert("Username and Media are required!");
+        return;
+    }
+    
+    
+    
+}

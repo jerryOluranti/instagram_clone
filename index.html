@@ -59,14 +59,14 @@
         </div>
     </div>
     <button class="floating_create_post"><i class="fas fa-plus"></i></button>
-    <div class="add_post_container">
+    <div class="add_post_container" style="display: none; visibility: hidden;">
         <form action="" class="add_form">
             <input type="text" id="post_username" placeholder="Username">
-            <label for="post_media">Select Media</label>
+            <label for="post_media" class="post_media_label">Select Media</label>
             <input type="file" id="post_media" hidden>
             <textarea id="post_message" placeholder="Message" width="100%"></textarea>
-            <button id="post_post">Post</button>
-            <button id="post_back">Back</button>
+            <button id="post_post" class="post_button">Post</button>
+            <button id="post_back" class="post_button">Back</button>
         </form>
     </div>
 </body>
