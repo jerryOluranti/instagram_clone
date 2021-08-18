@@ -1,0 +1,23 @@
+ [
+    {
+        "username": "jerry",
+        "media": "image/image1.jpg",
+        "likes": 123987,
+        "message": "Lol! Javascript is superb :)",
+        "time": "11 HOURS AGO"
+    },
+    {
+        "username": "codem@nia",
+        "media": "image/image2.jpg",
+        "likes": 700,
+        "message": "Hello World!",
+        "time": "4 MINUTES AGO"
+    },
+    {
+        "username": "alpha",
+        "media": "image/image3.jpg",
+        "likes": 127,
+        "message": "Good Morning",
+        "time": "2 HOURS AGO"
+    }
+]

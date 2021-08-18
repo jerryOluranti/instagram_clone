@@ -1,0 +1,27 @@
+{
+  "name": "instagram_api",
+  "version": "1.0.0",
+  "description": "An api for my instagram clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jerryHolurantie/instagram_clone.git"
+  },
+  "keywords": [
+    "instagram",
+    "clone"
+  ],
+  "author": "Jeremiah Oluranti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerryHolurantie/instagram_clone/issues"
+  },
+  "homepage": "https://github.com/jerryHolurantie/instagram_clone#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
